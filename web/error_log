@@ -1,0 +1,5 @@
+[14-Oct-2025 06:41:26 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/tugaspabw/public_html/2414101086.tugaspabw.site/web/config.php on line 8
+[14-Oct-2025 07:05:15 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/tugaspabw/public_html/2414101086.tugaspabw.site/web/config.php on line 8
+[14-Oct-2025 07:06:50 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'tugaspabw_2414101086'@'localhost' to database 'kasir_makanan' in /home/tugaspabw/public_html/2414101086.tugaspabw.site/web/config.php on line 8
+[14-Oct-2025 07:06:58 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'tugaspabw_2414101086'@'localhost' to database 'kasir_makanan' in /home/tugaspabw/public_html/2414101086.tugaspabw.site/web/config.php on line 8
+[14-Oct-2025 07:07:16 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'tugaspabw_2414101086' (-2) in /home/tugaspabw/public_html/2414101086.tugaspabw.site/web/config.php on line 8
