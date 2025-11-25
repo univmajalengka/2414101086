@@ -1,0 +1,482 @@
+/* Reset dan Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #2c3e50;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #e74c3c;
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+/* Navigation Styles */
+.navbar {
+    background: #2c3e50;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-logo h2 {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 10px 0;
+}
+
+.nav-link:hover {
+    color: #e74c3c;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('images/hero-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background: #c0392b;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Obyek Wisata Styles */
+.wisata-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.wisata-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.wisata-card:hover {
+    transform: translateY(-10px);
+}
+
+.wisata-img {
+    height: 200px;
+    overflow: hidden;
+}
+
+.wisata-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.wisata-card:hover .wisata-img img {
+    transform: scale(1.1);
+}
+
+.wisata-info {
+    padding: 20px;
+}
+
+.wisata-info h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.wisata-info p {
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+/* Fasilitas Styles */
+.fasilitas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.fasilitas-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.fasilitas-item:hover {
+    transform: translateY(-5px);
+}
+
+.fasilitas-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.fasilitas-item h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.fasilitas-item p {
+    color: #7f8c8d;
+}
+
+/* Paket Wisata Styles */
+.paket-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.paket-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.paket-card:hover {
+    transform: translateY(-10px);
+}
+
+.paket-card.featured {
+    border: 2px solid #e74c3c;
+}
+
+.paket-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #e74c3c;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.paket-header {
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.paket-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.paket-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.paket-img {
+    height: 200px;
+    overflow: hidden;
+}
+
+.paket-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.paket-content {
+    padding: 20px;
+}
+
+.paket-content ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.paket-content li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ecf0f1;
+    position: relative;
+    padding-left: 25px;
+}
+
+.paket-content li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.paket-btn {
+    width: 100%;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.paket-btn:hover {
+    background: #34495e;
+}
+
+/* About Styles */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-text h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    color: #7f8c8d;
+    line-height: 1.8;
+}
+
+.about-features {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.feature-text {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.about-image {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer Styles */
+.footer {
+    background: #2c3e50;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    color: #e74c3c;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    color: #bdc3c7;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #34495e;
+    color: #95a5a6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background: #2c3e50;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .paket-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wisata-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fasilitas-grid {
+        grid-template-columns: 1fr;
+    }
+}
